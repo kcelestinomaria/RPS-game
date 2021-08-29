@@ -26,7 +26,10 @@ const stdlib = loadStdlib(process.env);
    },
    seeOutcome: (outcome) => {
      console.log(`${Who} saw outcome ${OUTCOME[outcome]}`);
-   },  
+   },
+   informTimeout: () => {
+     console.log(`${Who} observed a timeout`);
+   },
  });
 
  await Promise.all([
